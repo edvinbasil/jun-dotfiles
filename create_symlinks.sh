@@ -72,6 +72,12 @@ create_sym "$HOME/.config/xfce4/terminal/terminalrc" "$HOME/dotfiles/xfceTerm"
 # you can achieve this using Access Control Lists
 #
 # setfacl -m "u:USERNAME:rwx" /root
+#
+# As of Nov 2015, ACL's are not enabled by default in
+# Ubuntu, so either 'apt-get install acl' and remount
+# partitions with 'acl' option or just run this
+# script as root user and then go back and change
+# permissions on $HOME/tmp to 'username:username'
 
 create_sym "/root/.bashrc" "$HOME/dotfiles/root_bashrc"
 create_sym "/root/.vimrc" "$HOME/dotfiles/vimrc"
@@ -88,7 +94,9 @@ create_sym "/root/.vimrc" "$HOME/dotfiles/vimrc"
 # setfacl -m "u:USERNAME:rwx" /etc
 # setfacl -m "u:USERNAME:rwx" /etc/bitlbee/
 
+
 create_sym "/etc/anacrontab" "$HOME/dotfiles/anacrontab"
+#TODO - check that anacron is installed
 create_sym "/etc/bitlbee/bitlbee.conf" "$HOME/dotfiles/bitlbee"
 
 
