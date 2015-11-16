@@ -43,8 +43,10 @@
 (require 'rw-hunspell)
 (require 'rw-language-and-country-codes)
 (require 'rw-ispell)
-(load "auctex.el" nil t t)
-(load "preview-latex.el" nil t t)
+;; X11 is not installed on our Ubuntu server, so leave don't load the
+;; following two elisp files
+;(load "auctex.el" nil t t)
+;(load "preview-latex.el" nil t t)
 ;; turn on flychecking globally
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
@@ -72,7 +74,7 @@
                         :font fontset
                         :height 110)))
 ;; AUCTEX preview-latex font
-(set-default 'preview-scale-function 1.2)
+;(set-default 'preview-scale-function 1.2)
 
 ;;======================
 ;;   GLOBAL VARIABLES
