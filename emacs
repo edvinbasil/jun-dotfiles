@@ -53,7 +53,7 @@
 ;;mode settings
 (column-number-mode 1)
 (menu-bar-mode 0)
-(scroll-bar-mode 0)
+;(scroll-bar-mode 0)
 (show-paren-mode t)
 (tool-bar-mode 0)
 
