@@ -1,5 +1,7 @@
 # CMUS autosave settings file
 # original path and name $HOME/.config/cmus/autosave
+# settings for ALSA (other files are set up for
+# Pulseaudio)
 
 set aaa_mode=all
 set altformat_current= %F 
