@@ -1,0 +1,5 @@
+# deb http://ppa.launchpad.net/cloud-installer/stable/ubuntu wily main
+# deb-src http://ppa.launchpad.net/cloud-installer/stable/ubuntu wily main
+
+# Local mirror of PPA for Wily cloud-installer
+deb http://192.168.10.99:7777/cloudPPA/ wily main

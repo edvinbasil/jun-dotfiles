@@ -1,0 +1,5 @@
+# deb http://ppa.launchpad.net/maas/stable/ubuntu wily main
+# deb-src http://ppa.launchpad.net/maas/stable/ubuntu wily main
+
+# Local mirror of Wily PPA for maas
+deb http://192.168.10.99:7777/maasPPA/ wily main
