@@ -2,6 +2,8 @@
 # ~/.bashrc
 #
 
+export PATH=$PATH:$HOME/bin:$HOME/darkhttpd
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
